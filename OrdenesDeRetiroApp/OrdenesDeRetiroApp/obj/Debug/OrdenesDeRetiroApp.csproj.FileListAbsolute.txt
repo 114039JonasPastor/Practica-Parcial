@@ -1,0 +1,12 @@
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\bin\Debug\OrdenesDeRetiroApp.exe.config
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\bin\Debug\OrdenesDeRetiroApp.exe
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\bin\Debug\OrdenesDeRetiroApp.pdb
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.csproj.AssemblyReference.cache
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.FrmPrincipal.resources
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.Diseño.FrmRegistrarOrden.resources
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.Properties.Resources.resources
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.csproj.GenerateResource.cache
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.csproj.CoreCompileInputs.cache
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.exe
+C:\Users\Jonás\Documents\GitHub\Practica Parcial\OrdenesDeRetiroApp\OrdenesDeRetiroApp\obj\Debug\OrdenesDeRetiroApp.pdb
