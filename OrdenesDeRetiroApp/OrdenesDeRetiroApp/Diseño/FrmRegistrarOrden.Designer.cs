@@ -32,17 +32,17 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.dgvOrden = new System.Windows.Forms.DataGridView();
+            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.cmbMaterial = new System.Windows.Forms.ComboBox();
             this.txtResponsable = new System.Windows.Forms.TextBox();
             this.lblResponsable = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
@@ -54,14 +54,14 @@
             this.dtpFecha.Location = new System.Drawing.Point(93, 8);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 20;
+            this.dtpFecha.TabIndex = 0;
             // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(236, 249);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 19;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -71,7 +71,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(154, 249);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 18;
+            this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -93,56 +93,6 @@
             this.dgvOrden.Size = new System.Drawing.Size(448, 150);
             this.dgvOrden.TabIndex = 17;
             this.dgvOrden.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrden_CellContentClick);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(351, 64);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(112, 23);
-            this.btnAgregar.TabIndex = 16;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // nudCantidad
-            // 
-            this.nudCantidad.Location = new System.Drawing.Point(225, 66);
-            this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(120, 20);
-            this.nudCantidad.TabIndex = 15;
-            // 
-            // cmbMaterial
-            // 
-            this.cmbMaterial.FormattingEnabled = true;
-            this.cmbMaterial.Location = new System.Drawing.Point(15, 66);
-            this.cmbMaterial.Name = "cmbMaterial";
-            this.cmbMaterial.Size = new System.Drawing.Size(203, 21);
-            this.cmbMaterial.TabIndex = 14;
-            // 
-            // txtResponsable
-            // 
-            this.txtResponsable.Location = new System.Drawing.Point(93, 34);
-            this.txtResponsable.Name = "txtResponsable";
-            this.txtResponsable.Size = new System.Drawing.Size(252, 20);
-            this.txtResponsable.TabIndex = 13;
-            // 
-            // lblResponsable
-            // 
-            this.lblResponsable.AutoSize = true;
-            this.lblResponsable.Location = new System.Drawing.Point(12, 37);
-            this.lblResponsable.Name = "lblResponsable";
-            this.lblResponsable.Size = new System.Drawing.Size(75, 13);
-            this.lblResponsable.TabIndex = 12;
-            this.lblResponsable.Text = "Responsable :";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(44, 8);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(43, 13);
-            this.lblFecha.TabIndex = 11;
-            this.lblFecha.Text = "Fecha :";
             // 
             // ColID
             // 
@@ -179,6 +129,56 @@
             this.ColAccion.ReadOnly = true;
             this.ColAccion.Text = "Quitar";
             this.ColAccion.UseColumnTextForButtonValue = true;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(351, 64);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(112, 23);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // nudCantidad
+            // 
+            this.nudCantidad.Location = new System.Drawing.Point(225, 66);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(120, 20);
+            this.nudCantidad.TabIndex = 3;
+            // 
+            // cmbMaterial
+            // 
+            this.cmbMaterial.FormattingEnabled = true;
+            this.cmbMaterial.Location = new System.Drawing.Point(15, 66);
+            this.cmbMaterial.Name = "cmbMaterial";
+            this.cmbMaterial.Size = new System.Drawing.Size(203, 21);
+            this.cmbMaterial.TabIndex = 2;
+            // 
+            // txtResponsable
+            // 
+            this.txtResponsable.Location = new System.Drawing.Point(93, 34);
+            this.txtResponsable.Name = "txtResponsable";
+            this.txtResponsable.Size = new System.Drawing.Size(252, 20);
+            this.txtResponsable.TabIndex = 1;
+            // 
+            // lblResponsable
+            // 
+            this.lblResponsable.AutoSize = true;
+            this.lblResponsable.Location = new System.Drawing.Point(12, 37);
+            this.lblResponsable.Name = "lblResponsable";
+            this.lblResponsable.Size = new System.Drawing.Size(75, 13);
+            this.lblResponsable.TabIndex = 12;
+            this.lblResponsable.Text = "Responsable :";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(44, 8);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(43, 13);
+            this.lblFecha.TabIndex = 11;
+            this.lblFecha.Text = "Fecha :";
             // 
             // FrmRegistrarOrden
             // 

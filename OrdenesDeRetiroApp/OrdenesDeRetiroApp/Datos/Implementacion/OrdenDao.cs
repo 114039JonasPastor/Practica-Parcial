@@ -13,9 +13,9 @@ namespace OrdenesDeRetiroApp.Datos.Implementacion
     public class OrdenDao : IOrdenDao
     {
         private SqlConnection conexion;
-        public bool Alta(OrdenRetiro oOrden)
+        public int Alta(OrdenRetiro oOrden)
         {
-            bool resultado = true;
+            int resultado = 0;
             SqlTransaction t = null;
             conexion = DBHelper.ObtenerInstancia().ObtenerConexion();
 
@@ -54,13 +54,14 @@ namespace OrdenesDeRetiroApp.Datos.Implementacion
                     NumeroDetalle++;
                 }
                 t.Commit();
+                resultado = nroOrden;
             }
             catch
             {
                 if (t != null)
                 {
                     t.Rollback();
-                    resultado = false;
+                    resultado = 0;
                 }
             }
             finally

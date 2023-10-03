@@ -9,7 +9,7 @@ namespace OrdenesDeRetiroApp.Servicios.Interfaz
 {
     public interface IServicioOrden
     {
-        bool AltaOrden(OrdenRetiro oOrden);
+        int AltaOrden(OrdenRetiro oOrden);
 
     }
 }

@@ -110,9 +110,10 @@ namespace OrdenesDeRetiroApp.Diseño
         {
             nueva.Fecha = dtpFecha.Value;
             nueva.Responsable = txtResponsable.Text;
-            if (ServOrden.AltaOrden(nueva))
+            int nroOrden = ServOrden.AltaOrden(nueva);
+            if (nroOrden > 0)
             {
-                MessageBox.Show("Se ha podido registrar la orden ", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se ha registrado la orden N° " + nroOrden, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Limpiar();
             }
             else

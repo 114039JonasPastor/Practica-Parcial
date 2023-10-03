@@ -9,7 +9,7 @@ namespace OrdenesDeRetiroApp.Datos.Interfaz
 {
     public interface IOrdenDao
     {
-        bool Alta(OrdenRetiro oOrden);
+        int Alta(OrdenRetiro oOrden);
         bool Baja(int nro);
     }
 }

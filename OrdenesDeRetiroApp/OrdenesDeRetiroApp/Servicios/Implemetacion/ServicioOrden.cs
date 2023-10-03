@@ -17,11 +17,10 @@ namespace OrdenesDeRetiroApp.Servicios.Implemetacion
         {
             dao = new OrdenDao();
         }
-       
-        public bool AltaOrden(OrdenRetiro oOrden)
+
+        public int AltaOrden(OrdenRetiro oOrden)
         {
             return dao.Alta(oOrden);
         }
-
     }
 }
