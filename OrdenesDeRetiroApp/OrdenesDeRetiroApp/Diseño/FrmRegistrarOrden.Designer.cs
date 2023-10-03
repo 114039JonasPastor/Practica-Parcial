@@ -32,17 +32,17 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.dgvOrden = new System.Windows.Forms.DataGridView();
-            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.cmbMaterial = new System.Windows.Forms.ComboBox();
             this.txtResponsable = new System.Windows.Forms.TextBox();
             this.lblResponsable = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
@@ -94,39 +94,6 @@
             this.dgvOrden.TabIndex = 17;
             this.dgvOrden.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrden_CellContentClick);
             // 
-            // ColID
-            // 
-            this.ColID.HeaderText = "ID";
-            this.ColID.Name = "ColID";
-            this.ColID.ReadOnly = true;
-            this.ColID.Visible = false;
-            // 
-            // ColMaterial
-            // 
-            this.ColMaterial.HeaderText = "Material";
-            this.ColMaterial.Name = "ColMaterial";
-            this.ColMaterial.ReadOnly = true;
-            // 
-            // ColStock
-            // 
-            this.ColStock.HeaderText = "Stock";
-            this.ColStock.Name = "ColStock";
-            this.ColStock.ReadOnly = true;
-            // 
-            // ColCantidad
-            // 
-            this.ColCantidad.HeaderText = "Cantidad";
-            this.ColCantidad.Name = "ColCantidad";
-            this.ColCantidad.ReadOnly = true;
-            // 
-            // ColAccion
-            // 
-            this.ColAccion.HeaderText = "Accion";
-            this.ColAccion.Name = "ColAccion";
-            this.ColAccion.ReadOnly = true;
-            this.ColAccion.Text = "Quitar";
-            this.ColAccion.UseColumnTextForButtonValue = true;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(351, 64);
@@ -177,6 +144,42 @@
             this.lblFecha.TabIndex = 11;
             this.lblFecha.Text = "Fecha :";
             // 
+            // ColID
+            // 
+            this.ColID.HeaderText = "ID";
+            this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
+            this.ColID.Visible = false;
+            // 
+            // ColMaterial
+            // 
+            this.ColMaterial.HeaderText = "Material";
+            this.ColMaterial.Name = "ColMaterial";
+            this.ColMaterial.ReadOnly = true;
+            this.ColMaterial.Width = 155;
+            // 
+            // ColStock
+            // 
+            this.ColStock.HeaderText = "Stock";
+            this.ColStock.Name = "ColStock";
+            this.ColStock.ReadOnly = true;
+            this.ColStock.Width = 75;
+            // 
+            // ColCantidad
+            // 
+            this.ColCantidad.HeaderText = "Cantidad";
+            this.ColCantidad.Name = "ColCantidad";
+            this.ColCantidad.ReadOnly = true;
+            this.ColCantidad.Width = 75;
+            // 
+            // ColAccion
+            // 
+            this.ColAccion.HeaderText = "Accion";
+            this.ColAccion.Name = "ColAccion";
+            this.ColAccion.ReadOnly = true;
+            this.ColAccion.Text = "Quitar";
+            this.ColAccion.UseColumnTextForButtonValue = true;
+            // 
             // FrmRegistrarOrden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,16 +211,16 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.DataGridView dgvOrden;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColMaterial;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColStock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
-        private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.ComboBox cmbMaterial;
         private System.Windows.Forms.TextBox txtResponsable;
         private System.Windows.Forms.Label lblResponsable;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColMaterial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColStock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
     }
 }

@@ -81,6 +81,18 @@ namespace OrdenesDeRetiroApp.Diseño
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            int stock = 0;
+            int cantidad = 0;
+            foreach(DataGridViewRow row in dgvOrden.Rows)
+            {
+                stock = Convert.ToInt32(row.Cells["ColStock"].Value.ToString());
+                cantidad = Convert.ToInt32(row.Cells["ColCantidad"].Value.ToString());
+                if(stock < cantidad)
+                {
+                    MessageBox.Show("No hay suficiente stock para este material", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
             if(dgvOrden.Rows.Count == 0)
             {
                 MessageBox.Show("Debe de agregar al menos un detalle", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -100,14 +112,23 @@ namespace OrdenesDeRetiroApp.Diseño
             nueva.Responsable = txtResponsable.Text;
             if (ServOrden.AltaOrden(nueva))
             {
-                MessageBox.Show("Se ha podido registrar la orden", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Dispose();
+                MessageBox.Show("Se ha podido registrar la orden ", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Limpiar();
             }
             else
             {
                 MessageBox.Show("No se ha podido registrar la orden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+        }
+
+        private void Limpiar()
+        {
+            txtResponsable.Text = String.Empty;
+            cmbMaterial.SelectedIndex = -1;
+            nudCantidad.Value = 0;
+            dgvOrden.Rows.Clear();
+            dtpFecha.Value = DateTime.Today;
         }
 
         private void dgvOrden_CellContentClick(object sender, DataGridViewCellEventArgs e)

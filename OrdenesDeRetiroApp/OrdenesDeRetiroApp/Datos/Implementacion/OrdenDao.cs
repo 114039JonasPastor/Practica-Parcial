@@ -54,7 +54,6 @@ namespace OrdenesDeRetiroApp.Datos.Implementacion
                     NumeroDetalle++;
                 }
                 t.Commit();
-
             }
             catch
             {
@@ -71,7 +70,6 @@ namespace OrdenesDeRetiroApp.Datos.Implementacion
                     conexion.Close();
                 }
             }
-
             return resultado;
         }
 

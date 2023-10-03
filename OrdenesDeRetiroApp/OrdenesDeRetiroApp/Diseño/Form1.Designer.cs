@@ -33,6 +33,8 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarNuevaOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +42,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.ordenesToolStripMenuItem});
+            this.ordenesToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -58,7 +61,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -76,6 +79,21 @@
             this.registrarNuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.registrarNuevaOrdenToolStripMenuItem.Text = "Registrar nueva orden";
             this.registrarNuevaOrdenToolStripMenuItem.Click += new System.EventHandler(this.registrarNuevaOrdenToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listadoDeMaterialesToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // listadoDeMaterialesToolStripMenuItem
+            // 
+            this.listadoDeMaterialesToolStripMenuItem.Name = "listadoDeMaterialesToolStripMenuItem";
+            this.listadoDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.listadoDeMaterialesToolStripMenuItem.Text = "Listado de Materiales";
+            this.listadoDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeMaterialesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -100,6 +118,8 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarNuevaOrdenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeMaterialesToolStripMenuItem;
     }
 }
 

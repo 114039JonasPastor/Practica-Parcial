@@ -26,7 +26,16 @@ namespace OrdenesDeRetiroApp
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("¿Esta seguro de que desea salir?","Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void listadoDeMaterialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReporteMateriales reporte = new FrmReporteMateriales();
+            reporte.ShowDialog();
         }
     }
 }
